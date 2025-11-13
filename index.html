@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triple Identity - Personal Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes pulse-slow {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+        .animate-pulse-slow {
+            animation: pulse-slow 4s ease-in-out infinite;
+        }
+        .gradient-text {
+            background: linear-gradient(to right, #60a5fa, #a78bfa, #fb923c);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+    
+    <!-- Hero Section -->
+    <div class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(circle at 30% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%), radial-gradient(circle at 50% 50%, rgba(168, 85, 247, 0.3) 0%, transparent 50%), radial-gradient(circle at 70% 50%, rgba(249, 115, 22, 0.2) 0%, transparent 50%);"></div>
+        
+        <div class="relative z-10 text-center px-6 max-w-5xl flex flex-col md:flex-row items-center gap-12">
+            <div class="flex-shrink-0">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/30 to-orange-500/30 rounded-full blur-3xl"></div>
+                    <img 
+                        src="https://i.ibb.co/sJpd1qcc/IMG-0065.jpg"
+                        alt="Profile"
+                        class="relative w-full h-full object-cover rounded-full border-4 border-slate-700 shadow-2xl"
+                        style="object-position: center;"
+                    />
+                </div>
+            </div>
+            
+            <div class="flex-1 text-center md:text-left">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 gradient-text animate-pulse-slow">
+                    Triple Identity
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 mb-8">
+                    Tech Innovator · Musical Artist · Event Curator
+                </p>
+                <div class="flex gap-4 justify-center md:justify-start mb-8">
+                    <div class="w-16 h-1 bg-blue-500 rounded"></div>
+                    <div class="w-16 h-1 bg-purple-500 rounded"></div>
+                    <div class="w-16 h-1 bg-orange-500 rounded"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-8 h-8 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </div>
+    </div>
+
+    <!-- Identity Cards -->
+    <div class="max-w-7xl mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-3 gap-8">
+            <!-- Tech Card -->
+            <div class="group relative bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-slate-700 hover:border-slate-500 transition-all duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-cyan-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                
+                <div class="relative z-10">
+                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-blue-600 to-cyan-600 flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform duration-500">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-2">IT & Robotics Sales</h3>
+                    <p class="text-sm font-medium mb-4 bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent">
+                        AGIBOT · Shanghai
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Driving innovation in robotics technology, connecting cutting-edge solutions with forward-thinking businesses. Specialized in AI-powered robotics and automation systems.
+                    </p>
+                </div>
+
+                <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-gradient-to-br from-white/5 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+            </div>
+
+            <!-- Music Card -->
+            <div class="group relative bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-slate-700 hover:border-slate-500 transition-all duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-purple-600 to-pink-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                
+                <div class="relative z-10">
+                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-purple-600 to-pink-600 flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform duration-500">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"></path>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-2">Violin Performer</h3>
+                    <p class="text-sm font-medium mb-4 bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                        Hardingfele Learner
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Passionate about Norwegian folk music traditions. Currently mastering the Hardanger fiddle, bringing centuries-old melodies to modern audiences with dedication and artistry.
+                    </p>
+                </div>
+
+                <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-gradient-to-br from-white/5 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+            </div>
+
+            <!-- MC Card -->
+            <div class="group relative bg-slate-800/50 backdrop-blur rounded-2xl p-8 border border-slate-700 hover:border-slate-500 transition-all duration-500 hover:scale-105 hover:shadow-2xl overflow-hidden">
+                <div class="absolute inset-0 bg-gradient-to-br from-orange-600 to-red-600 opacity-0 group-hover:opacity-10 transition-opacity duration-500"></div>
+                
+                <div class="relative z-10">
+                    <div class="w-16 h-16 rounded-xl bg-gradient-to-br from-orange-600 to-red-600 flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform duration-500">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path>
+                        </svg>
+                    </div>
+                    
+                    <h3 class="text-2xl font-bold mb-2">Event MC</h3>
+                    <p class="text-sm font-medium mb-4 bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                        Professional Host
+                    </p>
+                    <p class="text-gray-400 leading-relaxed">
+                        Bringing energy and professionalism to events. Skilled in engaging diverse audiences, managing event flow, and creating memorable experiences for corporate and cultural gatherings.
+                    </p>
+                </div>
+
+                <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-gradient-to-br from-white/5 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Philosophy Section -->
+    <div class="max-w-4xl mx-auto px-6 py-20">
+        <div class="bg-gradient-to-r from-slate-800/80 to-slate-700/80 backdrop-blur rounded-3xl p-12 border border-slate-600">
+            <h2 class="text-4xl font-bold mb-6 text-center">Beyond Labels</h2>
+            <p class="text-lg text-gray-300 leading-relaxed text-center mb-8">
+                I believe in the power of multidimensional expertise. My journey spans the precision of technology, 
+                the emotion of music, and the connection of live events. Each identity enriches the others, 
+                creating a unique perspective that bridges innovation, artistry, and human connection.
+            </p>
+            <div class="flex justify-center gap-4 flex-wrap">
+                <div class="px-6 py-2 bg-blue-500/20 rounded-full text-blue-300 border border-blue-500/30">Innovation</div>
+                <div class="px-6 py-2 bg-purple-500/20 rounded-full text-purple-300 border border-purple-500/30">Artistry</div>
+                <div class="px-6 py-2 bg-orange-500/20 rounded-full text-orange-300 border border-orange-500/30">Connection</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="max-w-4xl mx-auto px-6 py-20">
+        <div class="text-center">
+            <h2 class="text-4xl font-bold mb-4">Let's Connect</h2>
+            <p class="text-gray-400 mb-8">Interested in collaboration? Let's create something extraordinary together.</p>
+            
+            <div class="flex justify-center gap-6 flex-wrap">
+                <a 
+                    href="mailto:ai.komatsu666@gmail.com"
+                    class="flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-full hover:shadow-xl hover:scale-105 transition-all duration-300"
+                >
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>
+                    <span class="font-semibold">Contact Me</span>
+                </a>
+                <a 
+                    href="https://www.linkedin.com/feed/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="flex items-center gap-2 px-8 py-4 bg-slate-700 rounded-full hover:bg-slate-600 hover:scale-105 transition-all duration-300"
+                >
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    <span class="font-semibold">LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-8 text-center text-gray-500">
+        <p>© 2025 · Tech · Music · Events · Living Multiple Lives</p>
+    </footer>
+
+</body>
+</html>
